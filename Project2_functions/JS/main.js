@@ -6,3 +6,4 @@ function Conc()
                                  
     document.getElementById("Text").innerHTML = sentence;     //Returns all concatenated text
 }
+
