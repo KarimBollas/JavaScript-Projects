@@ -22,7 +22,7 @@ function Div()                                                        // Define 
     var result=48/6;    
     document.getElementById("Div").innerHTML=" 48/6 = "+result;                                                        
 }
-function All()v                                                          // Define Addition Subtraction Multiplication and Divition function                                     
+function All()                                                          // Define Addition Subtraction Multiplication and Divition function                                     
 {           
     var result=(1+2)*10/2-5;    
     document.getElementById("All").innerHTML=" (1+2)*10/2-5 = "+result;                                                        
