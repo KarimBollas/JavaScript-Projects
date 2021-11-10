@@ -1,19 +1,3 @@
-
- /* // Classes Difinition
-
- class Soldier
- {
-     string Grado;                 //Attributes
-     string Nombre;
-     boolean onDuty;
-     Soldier(string grado, string nombre)  //Constructor 
-     {
-         Grado= grado;
-         Name = nombre;
-         onDuty= true;
-
-     }
- } */
 var park=1000;
 function Vehicle(make, model, year, color)
 {
@@ -66,5 +50,3 @@ function shootFunction()
         return park;
     }
 }
-
-
