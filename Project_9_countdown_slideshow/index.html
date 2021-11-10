@@ -1,0 +1,66 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+       
+		<title>Slideshow</title>
+		<meta charset="utf-8">
+        <meta name="author" content="Karim">
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+        <script src="./JS/main.js"></script>
+        
+	</head >
+	<body onload="showSlides()">
+
+
+
+		<div class='cutdown'>
+			<p>How many secons would you like to set your alarm for?</p>
+			<input id='seconds' value="3" />
+			<button onclick='cutdown()' >
+				Click me
+			</button>
+			<p id="timer"></p>
+		</div>
+
+		<div class="slideContainer">
+
+			
+			<div class="mySlides fade">
+			  <div class="numberT">1 / 3</div>
+			  <img src="./Img/slide1.jpg" style="width:100%">
+			  <div class="text">Fortress</div>
+			</div>
+		  
+			<div class="mySlides">
+			  <div class="numberT">2 / 3</div>
+			  <img src="./Img/slide2.jpg" style="width:100%">
+			  <div class="text">Courage</div>
+			</div>
+		  
+			<div class="mySlides">
+			  <div class="numberT">3 / 3</div>
+			  <img src="./Img/slide4.jpg" style="width:100%">
+			  <div class="text">Kindness</div>
+			</div>
+		  
+			
+			<a class="prev" onclick="nextSlides(-1)">&#10094;</a>
+			<a class="next" onclick="nextSlides(1)">&#10095;</a>
+		  </div>
+		  <br>
+		  
+		  
+		  <div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		  </div>
+
+
+
+
+
+
+	</body>
+	
+</html>
