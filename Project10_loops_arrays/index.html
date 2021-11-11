@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
         <meta name="author" content="Karim">
 		
-        <script src="./JS/main.js"></script>
+        <script src="./JS/main.js" defer></script>
         
 	</head >
 	<body >
@@ -15,6 +15,7 @@
 			<p id="Loop"></p>
 			<button onclick="Call_Loop()">Click me to run loop</button>
 		</div>
+
 		<div>
 			<input id="len" value="Type a text"/>
 			<button onclick="lenght_Method()">
@@ -44,6 +45,37 @@
 			</button>
 			<p id="const_result"></p>
 			<p id="const2_result"></p>
+		</div>
+
+		<div>			
+			<button onclick="let_Method()">
+				Let (Refered to loading variable)
+			</button>
+			<p id="let_result"></p>			
+		</div>
+
+		<div>
+			<p id="E_result"></p>
+		</div>
+
+		<div>
+			<p id="object_result"></p>
+		</div>		
+			
+		<div>
+			<input id="break" value="3"/>
+			<button onclick="break_Method()">
+				(count 1-10) Break number 
+			</button>
+			<p id="break_result" ></p>
+		</div>
+
+		<div>
+			<input id="con" value="4"/>
+			<button onclick="continue_Method()">
+				(count 1-10) Continue_assignment (type a number to skip) 
+			</button>
+			<p id="continue_result" ></p>
 		</div>
 
 	</body>
