@@ -1,0 +1,1 @@
+alert("async: "+document.getElementById("p1").innerHTML);

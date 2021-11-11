@@ -1,0 +1,1 @@
+alert("defer: " + document.getElementById("p1").innerHTML);
