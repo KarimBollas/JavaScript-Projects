@@ -5,7 +5,7 @@ const Calculator =
     Display_Value: '0',           // 0 on the screen
     First_Operand: null,        // hold the first operand for any expressions
     Wait_Second_Operand: false, // checks whether or not the second operand has been input     
-    operator: null,             // this will hold the operator, 
+    operator: null            // this will hold the operator, 
 };
 
 function Input_Digit(digit) // modifies values each time a button is clicked
@@ -38,7 +38,7 @@ function Input_Decimal(dot)
 
 function Handle_Operator(Next_Operator) 
 {
-    const { First_Operand, Display_Value, operator } = Calculator
+    const { First_Operand, Display_Value, operator } = Calculator;
     //when key is pressed, convert the current number displayed on the screen to a number and then store the result in Calculator.First_Operand if it doesn't already exist
     const Value_of_Input = parseFloat(Display_Value);
     
@@ -61,8 +61,8 @@ function Handle_Operator(Next_Operator)
         result    = Number(result).toFixed(9)
         //remove any trailing 0's
         result  = (result * 1).toString()
-        Calculator.Display_Value= parseFloat(result);
-        Calculator.First_Operand_Value = parseFloat(result); 
+        Calculator.Display_Value = parseFloat(result);
+        Calculator.First_Operand = parseFloat(result); 
          
          
     }
@@ -75,7 +75,7 @@ const Perform_Calculation =
     '/': (First_Operand, Second_Operand) => First_Operand / Second_Operand, 
     '*': (First_Operand, Second_Operand) => First_Operand * Second_Operand, 
     '+': (First_Operand, Second_Operand) =>  First_Operand + Second_Operand, 
-    '-': (First_Operand, Second_Operand) => First_operand - Second_Operand, 
+    '-': (First_Operand, Second_Operand) => First_Operand - Second_Operand, 
     '=': (First_Operand, Second_Operand) => Second_Operand 
 };
 
