@@ -7,7 +7,7 @@
 
 #frmMenu 
 {
-    width: 400px;
+    width: 600px;
     height: 200px; 
 } 
     
@@ -15,7 +15,7 @@
 {
     width: 200px;
     height: 190px;
-    margin: 0 auto;
+    margin: 20px auto;
     float: right; 
 } 
     
@@ -33,6 +33,13 @@
     float: right; 
 }    
     
+.center
+{
+    width: 200px;
+    height: 200px;
+    float: left; 
+} 
+
 #showText 
 {
     width: 200px;
@@ -44,14 +51,44 @@
 #cart 
 { 
     top: 0; 
-    margin:Opx auto; 
+    margin: 0px auto; 
     width: 400px;
     height: 200px; 
 }
 
 #btnOrder 
 { 
-    margin: 10px 0px 0p 100px;
+    margin: 10px 0px 0px 100px;
     width: 100px;
-    height: 40px; 
+    height: 40px;
+    display: block;
+    margin: 25px auto; 
 }
+
+body
+{
+    background-color: bisque;
+
+}
+
+h1
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkgreen;  
+    text-align: center;  
+}
+
+h3
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:darkslategray; 
+
+}
+
+div
+{
+    
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(77, 44, 5);
+} 
+
