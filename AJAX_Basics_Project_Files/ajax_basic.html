@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic AJAX Demo</title>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+			<h2>Get The Latest Content:</h2>
+			<div class='content' id="content">
+				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/>
+			</div>
+
+            <div class='content' id="content2">
+				<input type="button" class="button" value="Response Content" id="btn_content2" onclick="loadDoc();"/>
+			</div>
+		<script type="text/javascript">
+			
+            //STEP 1 setup the xml http request object
+            var ajax = new XMLHttpRequest();
+
+            //STEP 2 PREPARE THE OPEN REQUEST
+            ajax.open('GET','content.html');
+
+            //STEP 3 DEFINE THE AJAX RESPONSE CALLBACK METHOD
+            ajax.onreadystatechange = function()
+            {
+                if (ajax.readyState==4)
+                {
+                    document.getElementById('content').innerHTML = ajax.responseText;
+                }
+            }
+
+            //STEP 4 SEND THE AJAX REQUEST FOR DATA
+            function getContent()
+            {
+                ajax.send();
+                document.getElementById('btn_content').style.display = 'none';
+            }
+
+
+            //STEP 1 setup the xml http request object
+            var ajax2 = new XMLHttpRequest();
+
+            
+            
+
+           
+           
+
+            //STEP 4 SEND THE AJAX REQUEST FOR DATA
+            function loadDoc() 
+            {
+                
+                ajax2.onload = function() 
+                {
+                    document.getElementById("content2").innerHTML = this.responseText;//STEP 3 DEFINE THE AJAX RESPONSE CALLBACK METHOD
+                }
+                ajax2.open('GET','responsive_text.txt');//STEP 2 PREPARE THE OPEN REQUEST
+                ajax2.send();  
+            }
+
+
+
+
+
+
+
+		</script>
+    </body>
+</html>

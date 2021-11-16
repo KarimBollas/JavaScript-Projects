@@ -7,7 +7,7 @@
         <META HTTP-EQUIPV="Content-Type" CONTENT="text/html; charset=UTF-8">
         
         <meta name="author" content="Karim">
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <met name='viewport' content='width=device-width, initial-scale=1.0'>
         
         <link rel="stylesheet" href="./Pizza_CSS/Pizza.css" />
         <script src="./Pizza_JavaScript/Pizza.js" defer></script>
