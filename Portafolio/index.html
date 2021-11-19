@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Karim Bollas</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+        <script src="./JS/portafolio.js" defer></script>
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+            <a onclick = "openForm()" ondblclick="closeForm()">Contact</a>
+        </div>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="images/video/Typing.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Karim's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Amo entrañablemente a mi Patria, creo en ella. 
+                        <br>Toda mi fe, toda mi esperanza, toda mi solidaridad y buena voluntad, en ella están significadas..
+                        
+                    </q>
+                    <br> -E.M.I.
+                    <br>
+                    <br> My name is Karim Bollas. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy! 
+                </p>
+            </strong>
+        </div>
+
+        <!--SlideShow-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    
+                    <!--Slide 1 of 5-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="./images/contact.jpg" alt="My Picture">
+                            <div class="text">I'm available to assist you on your project!</div>
+                        </div>
+                    <!--End Slide 1 of 5-->
+                     <!--Slide 2 of 4-->
+                     <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/TICs.jpg" alt="My Picture">
+                        <div class="text">I am a communications and electronics engineer <br> trained in:<br>ICT, </div>
+                    </div>
+                    <!--End Slide 2 of 5-->
+                    <!--Slide 3 of 4-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/HTML_CSS_and_JavaScript.jpeg" alt="My Picture">
+                        <div class="text"> HTML, CSS, JavaScript, </div>
+                    </div>
+                     
+                    <!--End Slide 3 of 5-->
+                    <!--Slide 4 of 4-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/C_Sharp_and_Dot_NET.png" alt="My Picture">
+                        <div class="text">C#, .NET Framework, ASP.NET and MVC. </div>
+                    </div>
+                    <!--End Slide 4 of 5-->
+
+                    <!--Slide 5 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Contact_me.png" alt="Replace with a picture of your choosing"> 
+                        <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div> 
+                    </div>
+                    <!--Slide 5 of 5-->
+
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br> <!--Space images and dots-->
+
+                <!-- Navigation dots-->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span>                    
+                </div>
+                <!--End Navigation dots-->
+
+            </div>
+        </div>
+        <!--End Slidehow-->
+
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="images/custom.jpg" alt="Career description picture">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a communications and electronics engineer loves all kind of networks!, I enjoy time with my family and traveling. 
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s C# Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a onclick="openForm()">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/KarimBollas" target="_blank">Karim Bollas Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/KarimBollas" target="_blank"><img src="images/github.jpg" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact form-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>            
+            <div class="form-popup" id="myForm">
+                
+                <form action="mailto:emailkarimb@gmail.com" method="POST" class="form-container"> 
+                    <h1>Contact</h1>
+                    <label for="name">Name:</label>
+                        <input type="text" placeholder="Please enter your name here" name="name" required>
+                    <label for="email">Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here" required>
+                    <label for="message">Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">Karim Bollas as a <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a> student</p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
